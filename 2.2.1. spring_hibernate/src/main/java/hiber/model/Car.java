@@ -10,6 +10,7 @@ public class Car {
 
     @Column
     private int series;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
