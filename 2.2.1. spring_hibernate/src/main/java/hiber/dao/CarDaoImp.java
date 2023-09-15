@@ -21,7 +21,7 @@ public class CarDaoImp implements CarDao {
         sessionFactory.getCurrentSession().save(car);
     }
     @Override
-    public List<Car> listCars() {
+    public List<Car> getCars() {
         TypedQuery<Car> query = sessionFactory.getCurrentSession().createQuery("from Car");
         return query.getResultList();
     }
