@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 public interface CarService {
-    void add(Car car);
+    void addCar(Car car);
     List<Car> getCars();
 
     public User getUser(String madel, int series);
